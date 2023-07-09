@@ -1,30 +1,23 @@
 import java.io.File;
 import java.io.IOException;
 
-public class CrieterFile {
+public class CrieterFile {// клас для створювання файлу
 
     public static void fileCreator(){
-        try {
-            File file = new File("E:\\Нова папка\\java\\OOP\\проект 3\\File.txt");
+        try {// функція \яка виконається до помилки
+            File file = new File("E:\\Нова папка\\java\\OOP\\проект 3\\File.txt");// ініціалізація класу для створення файлу та шлях файлу
 
-            if (file.createNewFile()){
+            if (file.createNewFile()){// саме створення
                 System.out.println("файл створений ");
-            }else{
+            }else{//якщо створений виведе це
                 System.out.println("файл створений раніше ");
             }
-        }catch (Exception e ){
+        }catch (Exception e ){// ловимо помилку
             System.err.println(e);
         }
     }
 
-//    public static void recordInformationInFail(){
-//        try {
-//
-//        }catch (IOException ex){
-//            System.out.println(ex.getMessage());
-//        }
-//
-//    }
+
 
 
 }
